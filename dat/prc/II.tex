@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{overpic}
+\usepackage{ctex}
+\usepackage{upgreek}
+\begin{document}
+\begin{overpic}[width=60mm,height=35mm,trim={1cm 9cm 2cm 11cm},clip]%
+	{../src/II.pdf}
+	\unitlength=1mm
+	\small\boldmath
+	\put(23,1){\rotatebox{0}{\footnotesize 电磁铁电流$I_{H}$/A}}
+	\put(.5,8){\rotatebox{90}{\footnotesize 谐振电流$I_{P}/\upmu$A}}
+\end{overpic}
+\end{document}

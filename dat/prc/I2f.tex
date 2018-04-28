@@ -1,0 +1,12 @@
+\documentclass{standalone}
+\usepackage{overpic}
+\usepackage{ctex}
+\begin{document}
+\begin{overpic}[width=60mm,height=35mm,trim={1cm 9cm 2cm 11cm},clip]%
+	{../src/I2f.pdf}
+	\unitlength=1mm
+	\small\boldmath
+	\put(23,1){\rotatebox{0}{\footnotesize 信源频率$f$/GHz}}
+	\put(.5,9){\rotatebox{90}{\footnotesize 检波2电流$I$/A}}
+\end{overpic}
+\end{document}

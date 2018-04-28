@@ -1,0 +1,12 @@
+\documentclass{standalone}
+\usepackage{overpic}
+\usepackage{ctex}
+\begin{document}
+\begin{overpic}[width=60mm,height=35mm,trim={1cm 9cm 2cm 11cm},clip]%
+	{../src/fV.pdf}
+	\unitlength=1mm
+	\small\boldmath
+	\put(23,1){\rotatebox{0}{\footnotesize 工作电压$U$/V}}
+	\put(.5,8){\rotatebox{90}{\footnotesize 输出频率$f$/MHz}}
+\end{overpic}
+\end{document}
