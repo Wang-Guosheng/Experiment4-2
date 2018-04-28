@@ -42,11 +42,13 @@
 				H_z={\rm i}\dfrac{\pi}{\omega\mu a}E_0\cos{\dfrac{\pi x}{a}}{\rm e}^{{\rm i}(\omega t-\beta z)}.
 			\end{cases}\label{eq:emwave}
 		\end{equation}
-		其中，相位常数$\beta =\dfrac{2\pi}{\lambda_{\rm g}}$，波导波长$\lambda_{\rm g}=\dfrac{\lambda}{\sqrt{1-\left(\lambda /\lambda_0\right)^2}}$，$\lambda_0 = 2a$，$\lambda$是微波在真空中的波长。
-		\begin{wrapfigure}[]{l}[0pt]{6cm }
+		\FloatBarrier
+		\begin{wrapfigure}[]{r}[0pt]{6cm }
 			\includegraphics[width=5cm]{fig/scan/StructureoftheEMFieldofTE10Wave.png}
 			\caption{波导管中TE$_{10}$波的电磁场结构}\label{fig:波导管中TE10波的电磁场结构}
 		\end{wrapfigure}
+		\FloatBarrier
+		其中，相位常数$\beta =\dfrac{2\pi}{\lambda_{\rm g}}$，波导波长$\lambda_{\rm g}=\dfrac{\lambda}{\sqrt{1-\left(\lambda /\lambda_0\right)^2}}$，$\lambda_0 = 2a$，$\lambda$是微波在真空中的波长。
 		\par 由\cref{eq:emwave}可以看出此波导管中的电磁波分布具有以下特征：
 		\begin{enumerate}
 			\item $\lambda_{\rm g} >\lambda$；
@@ -58,17 +60,56 @@
 	% subsubsection 微波的传播 (end)
 	\subsubsection{微波测量} % (fold)
 		\label{ssub:微波测量}
+		\begin{figure}[htbp]
+			\subfloat[谐振式频率计]{\includegraphics[height=3cm,width=4cm]{fig/scan/StructureofaResonaceSpectrometer.png}\label{subfig:谐振式频率计}}\hspace{.5cm}
+			\subfloat[晶体检波器]{\includegraphics[height=3cm,width=4cm]{fig/scan/CrystalWaveDetector.png}\label{subfig:晶体检波器}}\hspace{.5cm}
+			\subfloat[微波检波二极管的$I_V$曲线]{\includegraphics[height=3cm,width=3cm]{fig/scan/I-VCurveofaDetectorDiode.png}\label{subfig:微波检波二极管的IV曲线}}\hspace{.5cm}
+			\subfloat[测量线]{\includegraphics[height=3cm,width=4cm]{fig/scan/StructureofaMeasuringLine.png}\label{subfig:测量线}}
+			\caption{微波测量}\label{fig:微波测量}
+		\end{figure}
 		\begin{enumerate}
 			\item 频率测量（谐振式频率计）\\
-				吸收式谐振频率计是一个长度$L$可调的谐振腔，可以通过耦合孔与波导管相连，调节$L$至腔体对微波功率发生强烈的共振吸收，功率监测示数减小，即可通过频率校正表得到微波频率。
+				吸收式谐振频率计（\cref{subfig:谐振式频率计}）是一个长度$L$可调的谐振腔，可以通过耦合孔与波导管相连，调节$L$至腔体对微波功率发生强烈的共振吸收，功率监测示数减小，即可通过频率校正表得到微波频率。
 			\item 功率测量（晶体检波器）\\
-				功率的绝对测量可以用热敏电阻等测量微波转化的热能，也可以用晶体检波器用于检测功率的相对值。晶体检波器中的微波二极管将微波信号转化为直流电信号，微波电信号很弱，处于非线性区；若微波检波信号电流在5$\sim$10\upmu A，大致有$I\propto V^2$，即平方检波律，由此可知$I=KP$，故可用$I$作为$P$的相对值。
+				功率的绝对测量可以用热敏电阻等测量微波转化的热能，也可以用晶体检波器用于检测功率的相对值。晶体检波器（\cref{subfig:晶体检波器}）中的微波二极管将微波信号转化为直流电信号，微波电信号很弱，处于非线性区；若微波检波信号电流在5$\sim 10\upmu$A，大致有$I\propto V^2$，即平方检波律（\cref{subfig:微波检波二极管的IV曲线}），由此可知$I=KP$，故可用$I$作为$P$的相对值。
 			\item 驻波比测量（测量线）\\
-				在一段波导管宽壁中线上沿微波传输方向开一个长为几个波长的狭槽，将一探针在槽中来回移动，即可测出沿槽线方向的相对强度分布。
+				如\cref{subfig:测量线}，在一段波导管宽壁中线上沿微波传输方向开一个长为几个波长的狭槽，将一探针在槽中来回移动，即可测出沿槽线方向的相对强度分布。
 		\end{enumerate}
 	% subsubsection 微波测量 (end)
 % subsection 微波 (end)
 \subsection{铁磁共振} % (fold)
 	\label{sub:铁磁共振}
-	利用铁磁材料在相互垂直的
+	利用铁磁材料在相互垂直的稳恒磁场和交变磁场共同作用下发生的铁磁共振现象可以测定材料的$g$银子/共振线宽/弛豫时间等性质。
+	\subsubsection{铁磁共振原理} % (fold)
+		\label{ssub:铁磁共振原理}
+		\par 磁畴是铁磁体中自发磁化的小区域，其自发磁化强度记为$\boldsymbol{M}_{\rm S}$。铁磁体中磁化系数$\chi\sim 10^{1\sim 6}$，故只要加以很小的磁场，就能使铁磁体达到饱和磁化。
+		\par 设所加磁场为
+		\begin{equation}
+			\boldsymbol{H}=\boldsymbol{H}_0+\boldsymbol{h}\quad (\boldsymbol{H}_0\text{为}z\text{方向恒定磁场，}\boldsymbol{h}\text{为横向微波交变磁场})
+		\end{equation}
+		时，铁磁体饱和磁化，则$\boldsymbol{M}_{\rm S}$将从原来的平衡方向与$\boldsymbol{H}_0$夹角$\theta$处开始绕$\boldsymbol{H}_0$以角频率$\boldsymbol{\omega}_0=\gamma\boldsymbol{H}_0$进动，其中旋磁比$\gamma = g\dfrac{\mu_0 e}{2m}$。
+		\par 只有钟祥磁场时，磁矩进动将受到阻尼作用，振幅不断衰减，以至指向$z$方向；若加微波场为其补充能量，则到$\omega = \omega_0$时，微波能量被磁矩进动吸收的部分恰可弥补进动阻尼消耗的能量，即为铁磁共振。
+		\par 此时磁导率张量为
+		\begin{equation}
+			\boldsymbol{\mu}=
+			\begin{pmatrix}
+				\mu & -\mathrm{i}\kappa & 0 \\
+				\mathrm{i}\kappa & \mu & 0 \\
+				 0 & 0 & \mu_z \\
+			\end{pmatrix},
+			\quad (\mu = \mu'-{\rm i}\mu'',\kappa = \kappa'-{\rm i}\kappa'',\mu_z = \mu_z'-{\rm i}\mu_z'')
+		\end{equation}
+		其中实部表示色散特性，虚部表示损耗特性。
+		\par 若固定微波频率$\omega_0$，调节$H_0$大小，则调至$H_0=H_{\rm r}$时发生共振。此式可以在$\mu''-H_0$关系中观察到共振峰。共振磁场强度$H_{\rm r}$即图中$\mu''_{\rm max}=\mu''_{\rm r}$处对应的磁场强度。$\Delta H = |H_1-H_2|$称为共振线宽，其中$\mu''|_{H_0=H_1,H_2}=\dfrac{\mu''_{\rm r}}{2}$。通常铁磁体的弛豫时间满足
+		\begin{equation}
+			\tau = \dfrac{2}{\gamma \Delta H}.\quad (\sim 10^{-6 \sim -9}{\rm s})
+		\end{equation}
+	% subsubsection 铁磁共振原理 (end)
+	\subsubsection{传输式谐振腔} % (fold)
+		\label{ssub:传输式谐振腔}
+		\par 传输式金属谐振腔时一段矩形波导管两端加上带耦合孔的短路金属板。电磁场被导体壁局限在空腔内部连续反射；只有有合适波型和频率的电磁波能在其中形成驻波，发生谐振。
+		\begin{enumerate}
+			\item 
+		\end{enumerate}
+	% subsubsection 传输式谐振腔 (end)
 % subsection 铁磁共振 (end)
