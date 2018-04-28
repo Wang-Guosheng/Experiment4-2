@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  22 APR 2018 01:54
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  28 APR 2018 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2656,12 +2656,30 @@ File: fig/scan/I-VFeatureofaBodyEffectTube.png Graphic file (type QTm)
 File: fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png Graphic file (type QTm
 )
 
-<use  "fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png" >) (./Procedures.tex
+<use  "fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png" >
+File: fig/scan/Rectangularwaveguide.png Graphic file (type QTm)
+
+<use  "fig/scan/Rectangularwaveguide.png" > [2]
+File: fig/scan/StructureoftheEMFieldofTE10Wave.png Graphic file (type QTm)
+
+<use  "fig/scan/StructureoftheEMFieldofTE10Wave.png" >
+File: fig/scan/StructureofaResonaceSpectrometer.png Graphic file (type QTm)
+
+<use  "fig/scan/StructureofaResonaceSpectrometer.png" >
+File: fig/scan/CrystalWaveDetector.png Graphic file (type QTm)
+
+<use  "fig/scan/CrystalWaveDetector.png" >
+File: fig/scan/I-VCurveofaDetectorDiode.png Graphic file (type QTm)
+
+<use  "fig/scan/I-VCurveofaDetectorDiode.png" >
+File: fig/scan/StructureofaMeasuringLine.png Graphic file (type QTm)
+
+<use  "fig/scan/StructureofaMeasuringLine.png" > [3]) (./Procedures.tex
 File: fig/scan/ExperimentalopticalpathdiagramofTransmissionresonatorFerromagnet
 icresonanceExperiment.png Graphic file (type QTm)
 
 <use  "fig/scan/ExperimentalopticalpathdiagramofTransmissionresonatorFerromagne
-ticresonanceExperiment.png" > [2]
+ticresonanceExperiment.png" > [4]
 Overfull \hbox (12.7076pt too wide) in paragraph at lines 17--18
 []\TU/fzlantingsong(0)/m/n/10.53937 本 实 验 是 在 \TU/lmr/m/n/10.53937 3 \TU/fzlant
 ingsong(0)/m/n/10.53937 厘 米 微 波 波 段 进 行 的，|  传 输 式 谐 振 腔 采 用 \TU/lmr/m/n/10.539
@@ -2671,7 +2689,7 @@ song(0)/m/n/10.53937 矩 型 谐 振 腔  |（本 实 验 中 $\OML/cmm/m/it/10.
 ingsong(0)/m/n/10.53937 ，|
  []
 
-[3]) (./AnaDis.tex) (./Conclusion.tex) (./bibliography.tex
+[5]) (./AnaDis.tex) (./Conclusion.tex) (./bibliography.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
@@ -2686,7 +2704,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-) (./Apparatus.tex) (./notice.tex) (./Record.tex) [4]
+) (./Apparatus.tex) (./notice.tex) (./Record.tex) [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./main.aux)
@@ -2698,12 +2716,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 44944 strings out of 493005
- 872941 string characters out of 6137956
- 963866 words of memory out of 5000000
- 48164 multiletter control sequences out of 15000+600000
- 16366 words of font info for 98 fonts, out of 8000000 for 9000
+ 45039 strings out of 493005
+ 876071 string characters out of 6137956
+ 962867 words of memory out of 5000000
+ 48243 multiletter control sequences out of 15000+600000
+ 19993 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,11n,70p,10450b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,11n,70p,10450b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (4 pages).
+Output written on main.pdf (6 pages).
