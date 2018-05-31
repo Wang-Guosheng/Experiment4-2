@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  28 APR 2018 14:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.2.21)  3 MAY 2018 02:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2643,7 +2643,7 @@ LaTeX Font Warning: Font shape `TU/fzlantingsong(0)/bx/n' undefined
 
 
 LaTeX Font Warning: Font shape `TU/fzlantingsong(0)/m/sl' undefined
-(Font)              using `TU/fzlantingsong(0)/m/n' instead on input line 18.
+(Font)              using `TU/fzlantingsong(0)/m/n' instead on input line 14.
 
 [1
 
@@ -2656,10 +2656,10 @@ File: fig/scan/I-VFeatureofaBodyEffectTube.png Graphic file (type QTm)
 File: fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png Graphic file (type QTm
 )
 
-<use  "fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png" >
+<use  "fig/scan/PrinciplesofWorkingofaBodyEffectDiode.png" > [2]
 File: fig/scan/Rectangularwaveguide.png Graphic file (type QTm)
 
-<use  "fig/scan/Rectangularwaveguide.png" > [2]
+<use  "fig/scan/Rectangularwaveguide.png" >
 File: fig/scan/StructureoftheEMFieldofTE10Wave.png Graphic file (type QTm)
 
 <use  "fig/scan/StructureoftheEMFieldofTE10Wave.png" >
@@ -2674,37 +2674,111 @@ File: fig/scan/I-VCurveofaDetectorDiode.png Graphic file (type QTm)
 <use  "fig/scan/I-VCurveofaDetectorDiode.png" >
 File: fig/scan/StructureofaMeasuringLine.png Graphic file (type QTm)
 
-<use  "fig/scan/StructureofaMeasuringLine.png" > [3]) (./Procedures.tex
+<use  "fig/scan/StructureofaMeasuringLine.png" > [3]
+File: fig/scan/FerromagneticRessonanceCurve.png Graphic file (type QTm)
+
+<use  "fig/scan/FerromagneticRessonanceCurve.png" >
+File: fig/scan/ResonatingDiagramofTransmissionresonatorFerromagneticresonanceEx
+periment.png Graphic file (type QTm)
+
+<use  "fig/scan/ResonatingDiagramofTransmissionresonatorFerromagneticresonanceE
+xperiment.png" > [4]
+File: fig/scan/MeasuringtheresonantlinewidthofaFerromagneticSamplewithTransmiss
+ionresonatorFerromagneticresonanceExperiment.png Graphic file (type QTm)
+
+<use  "fig/scan/MeasuringtheresonantlinewidthofaFerromagneticSamplewithTransmis
+sionresonatorFerromagneticresonanceExperiment.png" >
+File: fig/scan/P-BDiagramofTransmissionresonatorFerromagneticresonanceExperimen
+t.png Graphic file (type QTm)
+
+<use  "fig/scan/P-BDiagramofTransmissionresonatorFerromagneticresonanceExperime
+nt.png" > [5]) (./Procedures.tex
 File: fig/scan/ExperimentalopticalpathdiagramofTransmissionresonatorFerromagnet
 icresonanceExperiment.png Graphic file (type QTm)
 
 <use  "fig/scan/ExperimentalopticalpathdiagramofTransmissionresonatorFerromagne
-ticresonanceExperiment.png" > [4]
-Overfull \hbox (12.7076pt too wide) in paragraph at lines 17--18
+ticresonanceExperiment.png" > [6]
+Overfull \hbox (10.3679pt too wide) in paragraph at lines 17--18
 []\TU/fzlantingsong(0)/m/n/10.53937 本 实 验 是 在 \TU/lmr/m/n/10.53937 3 \TU/fzlant
 ingsong(0)/m/n/10.53937 厘 米 微 波 波 段 进 行 的，|  传 输 式 谐 振 腔 采 用 \TU/lmr/m/n/10.539
-37 TEI\TU/fzlantingsong(0)/m/n/10.53937 。| \TU/lmr/m/n/10.53937 p \TU/fzlanting
-song(0)/m/n/10.53937 矩 型 谐 振 腔  |（本 实 验 中 $\OML/cmm/m/it/10.53937 p$\TU/lmr/m/n
-/10.53937 =8, $\OML/cmm/m/it/10.53937 a$\TU/lmr/m/n/10.53937 =2.295cm\TU/fzlant
-ingsong(0)/m/n/10.53937 ，|
+37 TE$[]$ \TU/fzlantingsong(0)/m/n/10.53937 矩 型 谐 振 腔  |（本 实 验 中 $\OML/cmm/m/it
+/10.53937 p$\TU/lmr/m/n/10.53937 =8, $\OML/cmm/m/it/10.53937 a$\TU/lmr/m/n/10.5
+3937 =2.295cm\TU/fzlantingsong(0)/m/n/10.53937 ，|
  []
 
-[5]) (./AnaDis.tex) (./Conclusion.tex) (./bibliography.tex
+) (./AnaDis.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2.
+
+[7]
+File: dat/prc/IV.pdf Graphic file (type QTm)
+ <use  "dat/prc/IV.pdf" >
+File: dat/prc/fV.pdf Graphic file (type QTm)
+ <use  "dat/prc/fV.pdf" >
+File: dat/prc/If.pdf Graphic file (type QTm)
+ <use  "dat/prc/If.pdf" >
+(./dat/src/IV.tex) (./dat/src/fV.tex) (./dat/src/If.tex) [8] (./dat/src/I2f.tex
+)
+File: dat/prc/I2f.pdf Graphic file (type QTm)
+ <use  "dat/prc/I2f.pdf" >
+File: fig/oscilloscope/mma/wave4phasedev.png Graphic file (type QTm)
+ <use  "fig/oscilloscope/mma/wave4phasedev.png" >
+File: fig/oscilloscope/mma/wave5Bdiff.png Graphic file (type QTm)
+
+<use  "fig/oscilloscope/mma/wave5Bdiff.png" >
+File: fig/oscilloscope/mma/wave6Bdiffu.png Graphic file (type QTm)
+
+<use  "fig/oscilloscope/mma/wave6Bdiffu.png" >
+File: fig/oscilloscope/mma/wave8f0diff.png Graphic file (type QTm)
+
+<use  "fig/oscilloscope/mma/wave8f0diff.png" >
+File: fig/oscilloscope/mma/wave9multiplecrystle.png Graphic file (type QTm)
+
+<use  "fig/oscilloscope/mma/wave9multiplecrystle.png" >
+File: fig/oscilloscope/mma/wave10singlecrystle.png Graphic file (type QTm)
+
+<use  "fig/oscilloscope/mma/wave10singlecrystle.png" >
+File: dat/prc/II.pdf Graphic file (type QTm)
+
+<use  "dat/prc/II.pdf" >
+File: dat/prc/BI.pdf Graphic file (type QTm)
+ <use  "dat/prc/BI.pdf" > (./dat/src/II.tex)
+(./dat/src/BI.tex) [9] [10]
+Overfull \hbox (10.97049pt too wide) in paragraph at lines 71--72
+[]\TU/fzlantingsong(0)/m/n/10.53937 用 高 斯 计 标 定 电 磁 铁 电 流 与 磁 场 强 度 的 关 系 如 子 图
+ [][]\TU/lmr/m/n/10.53937 (12b)[][]\TU/fzlantingsong(0)/m/n/10.53937 与 表 [][]\T
+U/lmr/m/n/10.53937 6[][]\TU/fzlantingsong(0)/m/n/10.53937 所 示。|  经 线 性 插 值 得 到 
+上 述 两 个 电 流 \TU/lmr/m/n/10.53937 1.5549A
+ []
+
+) (./Conclusion.tex [11]) (./bibliography.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--1
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
+) (./Apparatus.tex) (./notice.tex) (./Record.tex
+File: fig/rec/mma/wave1.png Graphic file (type QTm)
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
+<use  "fig/rec/mma/wave1.png" >
+File: fig/rec/mma/wave2.png Graphic file (type QTm)
+ <use  "fig/rec/mma/wave2.png" >
+File: fig/rec/mma/wave3.png Graphic file (type QTm)
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--1
-
- []
-
-) (./Apparatus.tex) (./notice.tex) (./Record.tex) [6]
+<use  "fig/rec/mma/wave3.png" >
+File: fig/rec/mma/wave4.png Graphic file (type QTm)
+ <use  "fig/rec/mma/wave4.png" >) [12] [13]
+[14] [15] [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./main.aux)
@@ -2716,12 +2790,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45039 strings out of 493005
- 876071 string characters out of 6137956
- 962867 words of memory out of 5000000
- 48243 multiletter control sequences out of 15000+600000
- 19993 words of font info for 115 fonts, out of 8000000 for 9000
+ 45234 strings out of 493005
+ 882305 string characters out of 6137956
+ 978866 words of memory out of 5000000
+ 48400 multiletter control sequences out of 15000+600000
+ 20009 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 63i,11n,70p,10450b,717s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,70p,10450b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (6 pages).
+Output written on main.pdf (16 pages).

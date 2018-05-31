@@ -2,7 +2,7 @@
 	\label{sub:微波}
 	\subsubsection{微波的性质} % (fold)
 		\label{ssub:微波的性质}
-		\par 微波即波长范围在1mm-1m的电磁波的总称，对应频率为$3\times 10^{8\sim 11}$Hz。微波的振荡周期接近真空电子管中的电子渡越时间（-10\textsuperscript{-10}s），使得电子在微波振荡中的滞后效应不可忽略；微波的波长与一般宏观物体（包括通常的电子元件）相当，因此会在宏观物体表面产生反射，并可由一般电子元件产生，且只能在波导管/谐振腔等中传输，而其电磁场参量在一般电路中需要用分布参数来描述；微波传播类似可见光，有直线传播/反射/吸收/折射等效应，而又可穿透电离层（区别于其它无线电波），常被用于卫星通信等领域，但借助微波的地面通讯则须借助中继站；微波量子能量许多原子/分子的振动-转动能级和磁能级相近，适用于相关研究。由于这些特性与其它波段电磁波都有不同，微波的产生/传播等都有专门的理论描述和技术实现。\supct{bib:textbook}
+		\par 微波即波长范围在1mm-1m的电磁波的总称，对应频率为$3\times 10^{8\sim 11}$Hz。微波的振荡周期接近真空电子管中的电子渡越时间（$\sim$10\textsuperscript{-10}s），使得电子在微波振荡中的滞后效应不可忽略；微波的波长与一般宏观物体（包括通常的电子元件）相当，因此会在宏观物体表面产生反射，并可由一般电子元件产生，且只能在波导管/谐振腔等中传输，而其电磁场参量在一般电路中需要用分布参数来描述；微波传播类似可见光，有直线传播/反射/吸收/折射等效应，而又可穿透电离层（区别于其它无线电波），常被用于卫星通信等领域，但借助微波的地面通讯则须借助中继站；微波量子能量许多原子/分子的振动-转动能级和磁能级相近，适用于相关研究。由于这些特性与其它波段电磁波都有不同，微波的产生/传播等都有专门的理论描述和技术实现。\supct{bib:textbook}
 	% subsubsection 微波的性质 (end)
 	\subsubsection{微波的产生} % (fold)
 	\label{ssub:微波的产生}
@@ -48,7 +48,14 @@
 			\caption{波导管中TE$_{10}$波的电磁场结构}\label{fig:波导管中TE10波的电磁场结构}
 		\end{wrapfigure}
 		\FloatBarrier
-		其中，相位常数$\beta =\dfrac{2\pi}{\lambda_{\rm g}}$，波导波长$\lambda_{\rm g}=\dfrac{\lambda}{\sqrt{1-\left(\lambda /\lambda_0\right)^2}}$，$\lambda_0 = 2a$，$\lambda$是微波在真空中的波长。
+		其中，
+		\begin{equation}
+		\begin{aligned}
+			&\beta =\dfrac{2\pi}{\lambda_{\rm g}}\text{是相位常数}\text{,波导波长}\lambda_{\rm g}=\dfrac{\lambda}{\sqrt{1-\left(\lambda /\lambda_0\right)^2}},\\
+			&\lambda_0 = 2a,\lambda\text{是微波在真空中的波长。}
+		\end{aligned}\label{eq:beta}
+		\end{equation}
+		
 		\par 由\cref{eq:emwave}可以看出此波导管中的电磁波分布具有以下特征：
 		\begin{enumerate}
 			\item $\lambda_{\rm g} >\lambda$；
@@ -100,16 +107,57 @@
 			\quad (\mu = \mu'-{\rm i}\mu'',\kappa = \kappa'-{\rm i}\kappa'',\mu_z = \mu_z'-{\rm i}\mu_z'')
 		\end{equation}
 		其中实部表示色散特性，虚部表示损耗特性。
-		\par 若固定微波频率$\omega_0$，调节$H_0$大小，则调至$H_0=H_{\rm r}$时发生共振。此式可以在$\mu''-H_0$关系中观察到共振峰。共振磁场强度$H_{\rm r}$即图中$\mu''_{\rm max}=\mu''_{\rm r}$处对应的磁场强度。$\Delta H = |H_1-H_2|$称为共振线宽，其中$\mu''|_{H_0=H_1,H_2}=\dfrac{\mu''_{\rm r}}{2}$。通常铁磁体的弛豫时间满足
+		\par 若固定微波频率$\omega_0$，调节$H_0$大小，则调至$H_0=H_{\rm r}$时发生共振。此式可以在$\mu''-H_0$关系中观察到共振峰（\cref{subfig:铁磁共振曲线}）。共振磁场强度$H_{\rm r}$即图中$\mu''_{\rm max}=\mu''_{\rm r}$处对应的磁场强度。$\Delta H = |H_1-H_2|$称为共振线宽，其中$\mu''|_{H_0=H_1,H_2}=\dfrac{\mu''_{\rm r}}{2}$。通常铁磁体的弛豫时间满足
 		\begin{equation}
 			\tau = \dfrac{2}{\gamma \Delta H}.\quad (\sim 10^{-6 \sim -9}{\rm s})
 		\end{equation}
 	% subsubsection 铁磁共振原理 (end)
+	\begin{figure}[htbp]
+		\subfloat[铁磁共振曲线]{\includegraphics[height=4cm]{fig/scan/FerromagneticRessonanceCurve.png}\label{subfig:铁磁共振曲线}}\hspace{1cm}
+		\subfloat[传输式谐振腔的谐振曲线]{\includegraphics[height=4cm]{fig/scan/ResonatingDiagramofTransmissionresonatorFerromagneticresonanceExperiment.png}\label{subfig:传输式谐振腔的谐振曲线}}
+		\caption{铁磁共振曲线和传输式谐振腔的谐振曲线}
+	\end{figure}
 	\subsubsection{传输式谐振腔} % (fold)
 		\label{ssub:传输式谐振腔}
 		\par 传输式金属谐振腔时一段矩形波导管两端加上带耦合孔的短路金属板。电磁场被导体壁局限在空腔内部连续反射；只有有合适波型和频率的电磁波能在其中形成驻波，发生谐振。
 		\begin{enumerate}
-			\item 
+			\item 谐振条件：腔长$l=p\cdot\dfrac{\lambda_g}{2},p=1,2,\cdots$；
+			\item 振荡模式：本实验中的矩形波导管只传输TE$_{10}$波，腔内电磁场表示为TE$_{10p}$。$p$表示长度方向的半波数。
+			\item 回路本身的品质因数$Q_0 = \omega_0\dfrac{\text{谐振时总储能}}{\text{损耗功率}}$表示谐振效率或频率选择性，即无载品质因数；加外电路后，$Q$值通常下降成为有载品质因数$Q_{\rm L}=\dfrac{Q_{0}Q_{\rm e}}{Q_{0}+Q_{\rm e}}$，其中$Q_{\rm e}$是谐振腔的外观品质因数，描述它与外电路耦合的强度。通常$Q_{\rm e}$越小时$Q_{\rm L}$也越低。
+			\item 谐振曲线（传输系数-频率曲线，\cref{subfig:传输式谐振腔的谐振曲线}）：$T(f)$曲线中可以得到$Q_{\rm L}=\dfrac{f_0}{|f_1-d_2|}$（$f_0$表示腔的谐振频率）。
 		\end{enumerate}
 	% subsubsection 传输式谐振腔 (end)
+	\subsubsection{用传输式谐振腔测量铁磁共振线宽} % (fold)
+		\label{ssub:用传输式谐振腔测量铁磁共振线宽}
+		\begin{enumerate}
+			\item 谐振腔微扰公式：谐振腔中加入铁磁样品后，谐振频率受到微扰，谐振频率变化很小时，除了样品所在位置，电磁场变化都可以忽略，在TE$_{10p}$腔内，有
+			\begin{equation}
+				\dfrac{f-f_0}{f_0}=-A(\mu'-1),
+				\quad \Delta\left(\dfrac{1}{Q_{\rm L}}\right)=2A\mu''.\label{eq:delq}
+			\end{equation}
+			其中$A$是与谐振腔振荡模式和体积以及样品体积相关的常量，一般满足
+			\begin{equation}
+				A=\dfrac{2}{1+l^2/a^2p^2}\dfrac{V_{\rm s}}{V_0}.\,(V_{\rm s}\text{是样品体积},V_0\text{是谐振腔体积})
+			\end{equation}
+			\item 测量方式：TE$_{10p}$腔内磁场只在$xz$平面内，外场应沿$y$方向（如\cref{subfig:测量共振线宽}）。若铁氧体样品很小且放在磁场最大处，腔内保持谐振，输入功率恒定，则有
+			\begin{equation}
+			\begin{aligned}
+				&T(f_0)=\dfrac{P_{\text{out}}(f_0)}{P_{\rm in}(f_0)}=\dfrac{4Q_{\rm L}^2}{Q_{\rm e,1}Q_{\rm e,2}}\,(Q_{\rm e,1},Q_{\rm e,2},\text{分别是输入和输出孔的外观品质因数})\\
+				&\Rightarrow P_{\rm out}(f_0)=\dfrac{4P_{\rm in}(f_0)Q_{\rm L}^2}{Q_{\rm e,1}Q_{\rm e,2}}\propto Q_{\rm L}^2.
+			\end{aligned}
+			\end{equation}
+			\begin{figure}[htbp]
+				\subfloat[测量共振线宽]{\includegraphics[height=4cm]{fig/scan/MeasuringtheresonantlinewidthofaFerromagneticSamplewithTransmissionresonatorFerromagneticresonanceExperiment.png}\label{subfig:测量共振线宽}}\hspace{2cm}
+				\subfloat[$P-B$关系曲线]{\includegraphics[height=4cm]{fig/scan/P-BDiagramofTransmissionresonatorFerromagneticresonanceExperiment.png}\label{subfig:PB关系曲线}}
+				\caption{测量共振线宽和$P-B$关系曲线}
+			\end{figure}
+			测出上式的变化关系后就得到$Q_{\rm L}$随着$f_0$的变化，即可由\cref{eq:delq}得到$\mu''$，进而按以下方法求出$\Delta H$（\cref{subfig:PB关系曲线}）：
+			\par 由以上测量得出$P_{\rm out}$随着$H_0$的变化曲线，$P_0,P_{\rm r}$分别表示远离共振和共振点处的输出功率，$P_{\frac{1}{2}}$为半共振点，即$\mu''=\dfrac{\mu''_{\rm r}}{2}$的点，于是有
+			\begin{equation}
+				P_{\frac{1}{2}}=\dfrac{4P_0}{(1+\sqrt{P_0/P_{\rm r}})^2}.\label{eq:p}
+			\end{equation}
+			找到$P_{\frac{1}{2}}$对应的点就可以在图中测出$\Delta H$。
+			\par $\mu$的存在会影响到谐振腔的谐振频率，即频散效应。此效应可以通过每次测量$P_{\rm out}-H_0$曲线时都重新调谐来消除。
+		\end{enumerate}
+	% subsubsection 用传输式谐振腔测量铁磁共振线宽 (end)
 % subsection 铁磁共振 (end)
